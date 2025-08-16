@@ -24,7 +24,7 @@ class TransferFunds extends Simulation{
 
   // 3 Load Scenario
   setUp(
-    scn.inject(rampUsersPerSec(5).to(15).during(30))
+    scn.inject(atOnceUsers(25))
   ).protocols(httpConf);
 
 }
